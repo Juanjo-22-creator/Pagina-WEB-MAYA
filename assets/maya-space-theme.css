@@ -1,0 +1,136 @@
+:root {
+  color-scheme: dark;
+  --maya-night: #050512;
+  --maya-blue: #09132c;
+  --maya-violet: #7736bd;
+  --maya-pink: #ed69c6;
+  --maya-lilac: #c994ff;
+  --maya-text: #f7f2ff;
+}
+html {
+  min-height: 100%;
+  background: var(--maya-night) !important;
+}
+body {
+  min-height: 100vh;
+  color: var(--maya-text);
+  background-color: var(--maya-night) !important;
+  background-image:
+    radial-gradient(ellipse at 18% 5%, rgba(104, 44, 150, .30), transparent 38%),
+    radial-gradient(ellipse at 88% 25%, rgba(20, 44, 98, .42), transparent 42%),
+    radial-gradient(ellipse at 46% 82%, rgba(188, 48, 130, .17), transparent 42%),
+    linear-gradient(155deg, #070717 0%, #050613 54%, #0c0619 100%) !important;
+  background-attachment: fixed !important;
+}
+#inner_content-79-15,
+.ct-inner-content,
+.ct-section,
+.ct-section-inner-wrap {
+  background-color: transparent !important;
+}
+header#div_block-27-15,
+#div_block-27-15,
+footer#div_block-33-15,
+#div_block-33-15 {
+  background-color: rgba(5, 5, 20, .84) !important;
+  backdrop-filter: blur(14px);
+}
+header#div_block-27-15 ul.oxy-nav-menu-list li a:after,
+footer#div_block-33-15 ul.oxy-nav-menu-list li a:after {
+  background: linear-gradient(90deg, #8b5bff, #f16ac8) !important;
+}
+header#div_block-27-15 ul.oxy-nav-menu-list li.current-menu-item a,
+footer#div_block-33-15 ul.oxy-nav-menu-list li.current-menu-item a,
+header#div_block-27-15 ul.oxy-nav-menu-list li a:hover,
+footer#div_block-33-15 ul.oxy-nav-menu-list li a:hover {
+  color: #f4a1e4 !important;
+}
+body:not(.home) #inner_content-79-15:after {
+  background: linear-gradient(0deg, rgba(5, 5, 18, .9), transparent) !important;
+}
+.ct-link-button,
+.oxy-button,
+input[type="submit"],
+button {
+  color: #fff !important;
+  background: linear-gradient(120deg, #7042e8, #d84cae) !important;
+  border-color: rgba(220, 163, 255, .55) !important;
+  box-shadow: 0 0 22px rgba(167, 73, 233, .24);
+}
+a:hover {
+  color: #f39cdb;
+}
+.maya-official-videos,
+.maya-journey-section {
+  width: min(1160px, calc(100% - 36px));
+  margin: clamp(36px, 6vw, 84px) auto;
+}
+.maya-official-videos h2,
+.maya-journey-section h2 {
+  margin: 0 0 24px;
+  color: #f8f1ff;
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  letter-spacing: .08em;
+  text-align: center;
+  text-shadow: 0 0 24px rgba(182, 104, 255, .35);
+}
+.maya-video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 26px);
+}
+.maya-video-card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  color: #f7f2ff;
+  background: linear-gradient(145deg, rgba(35, 23, 65, .82), rgba(8, 11, 30, .9));
+  border: 1px solid rgba(196, 137, 255, .34);
+  border-radius: 16px;
+  box-shadow: 0 12px 38px rgba(2, 2, 13, .34), 0 0 24px rgba(175, 72, 219, .12);
+}
+.maya-video-frame {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  background: #050512;
+}
+.maya-video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.maya-video-card h3 {
+  margin: 14px 4px 5px;
+  color: #f8f1ff;
+  font-size: 1rem;
+  letter-spacing: .06em;
+}
+.maya-journey-section {
+  padding: clamp(26px, 4vw, 48px);
+  background: linear-gradient(135deg, rgba(42, 25, 79, .58), rgba(8, 12, 34, .68));
+  border: 1px solid rgba(197, 132, 255, .28);
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(141, 66, 202, .15);
+}
+.maya-journey-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.maya-info-photo {
+  display: block;
+  width: min(100%, 900px) !important;
+  height: auto !important;
+  margin: 20px auto 36px;
+  border-radius: 16px;
+  box-shadow: 0 18px 55px rgba(2, 2, 13, .48), 0 0 30px rgba(170, 98, 245, .14);
+}
+@media (max-width: 760px) {
+  .maya-video-grid { grid-template-columns: 1fr; }
+  .maya-official-videos, .maya-journey-section { width: calc(100% - 24px); }
+  .maya-journey-section { padding: 20px 14px; }
+}
