@@ -1,12 +1,21 @@
 {
   "rewrites": [
-    { "source": "/musica/:path*", "destination": "/index.html" },
-    { "source": "/video/:path*", "destination": "/index.html" },
-    { "source": "/tour/:path*", "destination": "/index.html" },
-    { "source": "/tienda/:path*", "destination": "/index.html" },
-    { "source": "/marcas/:path*", "destination": "/index.html" },
-    { "source": "/info/:path*", "destination": "/index.html" },
-    { "source": "/prensa/:path*", "destination": "/index.html" },
-    { "source": "/privacy-policy/:path*", "destination": "/index.html" }
+    { "source": "/musica/:path*", "destination": "/musica/index.html" },
+    { "source": "/video/:path*", "destination": "/video/index.html" },
+    { "source": "/tour/:path*", "destination": "/tour/index.html" },
+    { "source": "/tienda/:path*", "destination": "/tienda/index.html" },
+    { "source": "/marcas/:path*", "destination": "/marcas/index.html" },
+    { "source": "/info/:path*", "destination": "/info/index.html" },
+    { "source": "/prensa/:path*", "destination": "/prensa/index.html" },
+    { "source": "/privacy-policy/:path*", "destination": "/privacy-policy/index.html" },
+    { "source": "/en/musica/:path*", "destination": "/en/musica/index.html" },
+    { "source": "/en/video/:path*", "destination": "/en/video/index.html" },
+    { "source": "/en/tour/:path*", "destination": "/en/tour/index.html" },
+    { "source": "/en/tienda/:path*", "destination": "/en/tienda/index.html" },
+    { "source": "/en/marcas/:path*", "destination": "/en/marcas/index.html" },
+    { "source": "/en/info/:path*", "destination": "/en/info/index.html" },
+    { "source": "/en/prensa/:path*", "destination": "/en/prensa/index.html" },
+    { "source": "/en/privacy-policy/:path*", "destination": "/en/privacy-policy/index.html" },
+    { "source": "/en/:path*", "destination": "/en/index.html" }
   ]
 }
