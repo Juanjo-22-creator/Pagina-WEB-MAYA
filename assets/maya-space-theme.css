@@ -26,7 +26,7 @@ body {
 .ct-inner-content,
 .ct-section,
 .ct-section-inner-wrap {
-  background-color: transparent !important;
+  background: transparent !important;
 }
 header#div_block-27-15,
 #div_block-27-15,
