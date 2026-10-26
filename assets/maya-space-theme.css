@@ -28,7 +28,15 @@ body {
 .ct-section-inner-wrap {
   background: transparent !important;
 }
-header#div_block-27-15,
+header#div_block-27-15 {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+#div_block-31-15 img#image-9-15 {
+  width: clamp(140px, 11vw, 210px) !important;
+  max-width: 90% !important;
+  height: auto !important;
+}header#div_block-27-15,
 #div_block-27-15,
 footer#div_block-33-15,
 #div_block-33-15 {
