@@ -142,3 +142,7 @@ a:hover {
   .maya-official-videos, .maya-journey-section { width: calc(100% - 24px); }
   .maya-journey-section { padding: 20px 14px; }
 }
+/* Hide the retired Tour link from desktop and mobile navigation. */
+header a[href*="/tour/"] {
+  display: none !important;
+}
